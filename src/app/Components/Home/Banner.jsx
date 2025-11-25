@@ -1,5 +1,6 @@
 import React from 'react';
 import banner from '../../../assets/banner.jpg';
+import Link from 'next/link';
 
 const Banner = () => {
     return (
@@ -28,13 +29,13 @@ const Banner = () => {
                     </p>
 
                     <div className="flex gap-3 justify-center flex-wrap">
-                        <button className="btn btn-primary px-6 text-sm sm:text-base">
+                        <Link href="/blog" className="btn btn-primary px-6 text-sm sm:text-base">
                             Start Learning
-                        </button>
+                        </Link>
 
-                        <button className="btn btn-outline btn-secondary px-6 text-sm sm:text-base">
+                        <Link href="/courses" className="btn btn-outline btn-secondary px-6 text-sm sm:text-base">
                             Browse Courses
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

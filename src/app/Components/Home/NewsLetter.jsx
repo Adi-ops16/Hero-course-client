@@ -16,6 +16,7 @@ const Newsletter = () => {
             showConfirmButton: false,
             timerProgressBar: true,
         });
+        e.target.reset()
     };
 
     return (
@@ -24,12 +25,11 @@ const Newsletter = () => {
             data-aos="fade-up"
         >
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
-                {/* Icon */}
+
                 <div className="bg-primary/20 p-4 rounded-full mb-4">
                     <FaEnvelopeOpenText className="text-primary text-3xl" />
                 </div>
 
-                {/* Heading */}
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
                     Stay Updated with Hero Courses
                 </h2>
@@ -37,7 +37,6 @@ const Newsletter = () => {
                     Subscribe to our newsletter and get the latest crash courses, coding tips, and developer updates delivered directly to your inbox.
                 </p>
 
-                {/* Newsletter Form */}
                 <form
                     onSubmit={handleNewsletter}
                     className="w-full sm:w-[500px] flex flex-col sm:flex-row items-center gap-3"
