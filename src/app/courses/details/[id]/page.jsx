@@ -104,13 +104,6 @@ export default function CourseDetails() {
                         </p>
                     </div>
 
-
-                    <div className="mt-6 bg-base-200 p-4 rounded-xl border">
-                        <p className="text-sm text-gray-600">
-                            ⭐ This course is part of our growing learning collection.
-                            If you enjoy practical, project-based learning—this one&apos;s for you.
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>

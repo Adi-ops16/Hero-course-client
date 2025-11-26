@@ -65,7 +65,7 @@ export default function FeaturedCourses() {
                                             {course.coursePrice} BDT
                                         </p>
                                         <a
-                                            href={`/courses/${course._id}`}
+                                            href={`/courses/details/${course._id}`}
                                             className="btn btn-primary btn-sm"
                                         >
                                             View Details
