@@ -4,7 +4,8 @@ const nextConfig = {
   reactCompiler: true,
   images: {
     domains: [
-      "i.pinimg.com"
+      "i.pinimg.com",
+      "lh3.googleusercontent.com"
     ]
   }
 };

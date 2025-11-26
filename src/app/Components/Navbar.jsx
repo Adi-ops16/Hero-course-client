@@ -7,6 +7,7 @@ import { FaAd, FaBook, FaBookmark, FaBookOpen, FaHome, FaPlusCircle, FaRegQuesti
 import useAuth from "../Hooks/useAuth/useAuth";
 import Swal from "sweetalert2";
 import { deleteCookie } from "cookies-next";
+import Image from "next/image";
 
 export default function Navbar() {
     const { user, logOut } = useAuth()
@@ -125,9 +126,12 @@ export default function Navbar() {
 
                 <div className="navbar-end">
                     {user ?
-                        <button onClick={handleLogOut} className="btn btn-primary">
-                            LogOut
-                        </button>
+                        <div className="flex gap-2">
+                            <Image className="rounded-full" width={40} height={12} src={`${user?.photoURL}`} alt="user-photo"></Image>
+                            <button onClick={handleLogOut} className="btn btn-primary">
+                                LogOut
+                            </button>
+                        </div>
                         :
                         <Link href="/auth/login" className="btn btn-primary">
                             Login
