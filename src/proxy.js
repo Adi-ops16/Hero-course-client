@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
 import useAuth from './app/Hooks/useAuth/useAuth'
-import { use, useContext } from 'react'
 
 // This function can be marked `async` if using `await` inside
 export function proxy(request) {
@@ -12,5 +11,5 @@ export function proxy(request) {
 }
 
 export const config = {
-    matcher: ['/create-a-course/:path*', '/my-courses','/courses/details/:path*'],
+    matcher: ['/create-a-course/:path*', '/my-courses'],
 }
